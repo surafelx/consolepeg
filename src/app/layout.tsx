@@ -55,7 +55,7 @@ export default function RootLayout({
         <div className="absolute inset-0 w-full h-full overflow-hidden z-[-1]">
           <video
             ref={videoRef}
-            className="absolute inset-0 w-full h-full object-cover opacity-90 "
+            className="absolute inset-0 w-full h-full object-cover opacity-60 "
             src="./video/trippy.mp4" // Place your video in /public
             loop
             muted
