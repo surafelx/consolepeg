@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
+    <div className="flex h-screen w-screen items-center justify-center z-[1000]">
       <div>
         <h1 className="text-8xl">Console.peg</h1>
         <p className="text-center text-2xl">
