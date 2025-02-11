@@ -1,56 +1,17 @@
 import Link from "next/link";
 
-<div className="px-10 py-10 lg:px-40 lg:py-40 overflow-y-scroll">
+      <div>
+       <div className="px-10 py-10 lg:px-40 lg:py-40 overflow-y-scroll">
   <Link href="/">
     <p>{"<-"} Go back home</p>
   </Link>
-  <h2 className="text-4xl font-bold">How We Built This Website</h2>
-  <p className="text-lg text-gray-600 mt-4">A breakdown of the process, tools, and decisions behind this project.</p>
+  <h2 className="text-4xl text-green-400 font-bold">How We Built This Website</h2>
+  <p className="text-xl text-red-300 mt-4">I wanted to tell you how we did it but sadly. The MDX is not working well, and this is all the time we have. But to put it simply. All of this was created with **Next.js** using the `npx create-next-app` command, and then we tried to add MDX, but it wasnt as easy as we expected. But we always have next time. So till then. Thanks for being here though. </p>
 
-<div style={{fontFamily: "Arial"}}>
-## Choosing the Tech Stack
 
-For this project, we used **Next.js** for its server-side rendering capabilities and MDX for writing content in Markdown with React components.
-
-### **Key Tools Used:**
-- **Next.js**: Framework for React
-- **MDX**: Markdown + JSX for easy content management
-- **Tailwind CSS**: Utility-first styling for fast UI development
-
-## Designing the Hero Section
-
-The hero section consists of:
-1. **A background illustration**: To give the site a unique visual identity.
-2. **Typography adjustments**: We used bold, readable fonts and added contrast for better visibility.
-3. **Navigation links**: Styled using Tailwind's utility classes for a clean UI.
-
-```tsx
-<div className="px-40 py-40 text-center bg-cover bg-center" style={{ backgroundImage: `url('/hero-bg.jpg')` }}>
-  <h1 className="text-6xl font-extrabold text-white drop-shadow-lg">Console.Peg</h1>
-  <p className="text-xl text-gray-200 mt-2">Turning coca 🧉 to code 👨‍💻 to injera. 🥙</p>
-</div>
-```
-
-## Implementing Navigation
-
-We used **Next.js' built-in Link component** for client-side navigation.
-
-```tsx
-<Link href="/projects">
-  <a className="text-blue-500 hover:underline">Check out our projects</a>
-</Link>
-```
-
-## Lessons Learned
-
-- **MDX is powerful**: It allows embedding React components directly within Markdown.
-- **Styling with Tailwind is fast**: Utility classes made styling easier and more manageable.
-- **Next.js simplifies routing**: The file-based routing system made navigation effortless.
-
----
-
-**Want to build something similar?** Reach out or check our source code!
 
 </div>
 
-</div>
+      </div>
+
+

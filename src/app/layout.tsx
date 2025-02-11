@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -64,6 +65,20 @@ export default function RootLayout({
           <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
         </div>
         <div className="">{children}</div>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-8BRGXDQT35"
+        />
+        <Script id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-8BRGXDQT35', {
+            page_path: window.location.pathname,
+          });
+        `}
+        </Script>
       </body>
     </html>
   );
