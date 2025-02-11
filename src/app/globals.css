@@ -26,3 +26,26 @@ body {
   background: var(--background);
   font-family: "mighty-souly";
 }
+
+@keyframes colorShift {
+  0% {
+    color: #ff00ff;
+  }
+  25% {
+    color: #00ffff;
+  }
+  50% {
+    color: #ffff00;
+  }
+  75% {
+    color: #ff0000;
+  }
+  100% {
+    color: #00ff00;
+  }
+}
+
+.trippy-text {
+  font-weight: bold;
+  animation: colorShift 3s infinite ease-in-out;
+}

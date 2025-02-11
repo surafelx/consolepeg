@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -51,12 +50,12 @@ export default function RootLayout({
       <body
         onMouseMove={playVideo}
         onClick={playVideo}
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-hidden `}
       >
         <div className="absolute inset-0 w-full h-full overflow-hidden z-[-1]">
           <video
             ref={videoRef}
-            className="absolute inset-0 w-full h-full object-cover opacity-80 "
+            className="absolute inset-0 w-full h-full object-cover opacity-90 "
             src="./video/trippy.mp4" // Place your video in /public
             loop
             muted
@@ -64,7 +63,7 @@ export default function RootLayout({
           />
           <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
         </div>
-        {children}
+        <div className="">{children}</div>
       </body>
     </html>
   );

@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex h-screen w-screen items-center justify-center z-[1000]">
+    <div className="flex px-40 py-40 h-screen w-screen justify-center items-center z-[1000]">
       <div>
-        <h1 className="text-8xl">Console.peg</h1>
+        <h1 className="text-8xl trippy-text text-center">Console.peg</h1>
         <p className="text-center text-2xl">
           turning coca 🥤 to code 🧑‍💻 to injera. 🫓
         </p>
